@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistic Carnival</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <section class="headercon"> 
+        <nav>
+            <a href="index.html"></a>
+                <div class="logo" id="logo"><img src="ac logo.png"></div>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="panel.html">PANELS</a></li>
+                        <li><a href="event.html">EVENTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+
+                     </ul>
+
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            
+        </nav>
+        <div class="text-box">
+            <hi>Contact Us</hi>
+
+              
+        </div>  
+
+    </section>
+
+    <section class="contactus">
+        <di class="row">
+            <hi>Aronno Alif (Director)</hi>
+            <p>Contact No : 01880901269 <br>Email : aronno.alif@gmail.com
+            </p>
+           </di>
+    </section>  
+        
+    <section class="con2">
+    
+       <div class="president">
+            <hi>Munazza Lioza Orni (President)</hi>
+            <p>Contact No : 01408635967 <br>Email : orniii931@gmail.com
+            </p>
+       </div>
+
+       <form action="formhandler.php" method="POST">
+           <input type="text" name="name" placeholder="Enter Your Name" required>
+           <input type="email" name="email" placeholder="Enter Email Address" required>
+           <input type="text" name="subject" placeholder="Enter Your Subject" required>
+           <textarea rows="8" name="message" placeholder="Message" required></textarea> <br>
+           <button type="Submit" class="sub-btn">Send Message</botton>
+        </form>
+       
+    </section>
+
+                
+              
+            
+            
+            
+            
+            <script>
+                var navLinks = document.getElementById("navLinks");
+          
+                function showMenu(){
+                    navLinks.style.right = "0"
+                }
+                function hideMenu(){
+                    navLinks.style.right = "-200px"
+                }
+          
+          
+          
+              </script>
+          
+</body>
+</html>
